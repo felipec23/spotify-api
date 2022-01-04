@@ -21,7 +21,7 @@ The main code is contained in "main.py" file. You can run the app by typing in a
 The following data validations and error handlings are applied:
 - Whenever a CRUD operation is called, the API checks if the element exists or not in the database. Depending on the case, it'll return the error and the explanation.
 - Date entities are checked before insertion in the database.
-- All responses are serialized and with a status code.
+- All responses are serialized. They all return a status code.
 - Code is easily reproducible (for the creation of new entities)
-- When the case, the arguments in the body of the request will be reviewed, and if mandatory elements are not detected, it'll throw an error stating the argument missing.
-- Nullability and uniqueness are pointed out in the tables creation.
+- When the case, the arguments in the body of the request will be reviewed, and if mandatory elements are not detected, it'll throw an error stating the missing argument/s.
+- Nullability and uniqueness are defined for each entity in the tables creation.
